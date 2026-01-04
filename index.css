@@ -271,7 +271,8 @@ input:checked + .slider:before {
     font-size: 0.875rem;
     font-weight: 500;
     margin-top: 2rem;
+    }
 }
-}
+
 
 

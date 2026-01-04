@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Conversión</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <main class="container">
+        <div class="content">
+            <h1 class="title">Calculadora de Conversión</h1>
+
+            <div class="card">
+                <div class="card-content">
+                    <div class="input-group-center">
+                        <label for="precio-dolar-ars" class="label">Precio Dólar AR$</label>
+                        <input
+                            id="precio-dolar-ars"
+                            type="text"
+                            inputmode="decimal"
+                            placeholder="0,00"
+                            class="input input-center"
+                        />
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <h2 class="card-title">Dólares × Bolivianos</h2>
+                </div>
+                <div class="card-content">
+                    <div class="form-group">
+                        <label for="dolares" class="label">Dólares</label>
+                        <input
+                            id="dolares"
+                            type="text"
+                            inputmode="decimal"
+                            placeholder="0,00"
+                            class="input"
+                        />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="bolivianos-usd" class="label">Bolivianos</label>
+                        <input
+                            id="bolivianos-usd"
+                            type="text"
+                            inputmode="decimal"
+                            placeholder="0,00"
+                            class="input"
+                        />
+                    </div>
+
+                    <div class="form-group">
+                        <label class="label">Resultado</label>
+                        <div class="result-display">
+                            <span id="resultado-usd">0,00</span>
+                            <span class="result-unit">Bs.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <div class="header-row">
+                        <h2 class="card-title">Pesos Argentinos × Bolivianos</h2>
+                        <div class="switch-group">
+                            <label for="auto-calculate" class="switch-label">Cálculo automático</label>
+                            <label class="switch">
+                                <input type="checkbox" id="auto-calculate" checked>
+                                <span class="slider"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <div class="form-group">
+                        <label for="pesos-argentinos" class="label">Pesos Argentinos</label>
+                        <input
+                            id="pesos-argentinos"
+                            type="text"
+                            inputmode="decimal"
+                            placeholder="0,00"
+                            class="input"
+                        />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="bolivianos-ars" class="label">Bolivianos</label>
+                        <input
+                            id="bolivianos-ars"
+                            type="text"
+                            inputmode="decimal"
+                            placeholder="0,00"
+                            class="input"
+                        />
+                    </div>
+
+                    <div class="form-group">
+                        <label class="label">Resultado</label>
+                        <div class="result-display">
+                            <span id="resultado-ars">0,00</span>
+                            <span class="result-unit">Bs.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="comparison-card" class="card card-primary hidden">
+                <div class="card-content">
+                    <div class="comparison-content">
+                        <p id="comparison-text" class="comparison-title"></p>
+                        <p id="comparison-diff" class="comparison-subtitle"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
+
